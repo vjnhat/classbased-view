@@ -1,0 +1,26 @@
+<html >
+    <head>
+            <title>
+            {% block title %}
+            {% endblock %}
+            </title>
+            <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+            <!-- Optional theme -->
+            <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+            
+            {% block extracss %}{% endblock %}
+    </head>
+    
+    <body>
+        {% block body %}
+
+        {% endblock %}
+        {% block extrajs %}
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        {% endblock %}
+    </body>
+
+</html>
+

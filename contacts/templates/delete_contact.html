@@ -1,0 +1,12 @@
+ Delete Contact
+
+
+<p> Are you want to delete the contact {{contact}} </p>
+
+<form action={% url "contacts-delete" pk=contact.id method="POST" %}
+
+	{% csrf_token %}
+
+<input type = "submit" value="YEs Deltet" />
+<a href="{% url "contacts-list"%}">No cancel </a>
+</form>
